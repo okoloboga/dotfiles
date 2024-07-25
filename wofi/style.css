@@ -1,0 +1,83 @@
+@define-color background #0e0516;
+@define-color input #0ef3ff;
+@define-color foreground #ee0077;
+
+* {
+  font-family: JetBrainsMono;
+  color: @foreground;
+  background: transparent;
+  font-size: 16px;
+}
+
+#window {
+    margin: 0px;
+    border: 2px solid @foreground;
+    background: @background;
+    border-radius: 7px;
+    opacity: 0.9;
+}
+
+#input {
+    padding: 4px;
+    margin: 4px;
+    padding-left: 20px;
+    border: none;
+    color: @input;
+    font-weight: bold;
+   	outline: none;
+    border-radius: 7px;
+    margin: 7px;
+    margin-bottom: 2px;
+}
+
+#input:focus {
+    border: 2px solid @foreground;
+    margin-bottom: 0px;
+}
+
+#inner-box {
+    margin: 4px;
+    border: 2px solid @background;
+    color: @foreground;
+    font-weight: bold;
+    background-color: @background;
+    border-radius: 7px;
+}
+
+#outer-box {
+    margin: 0px;
+    border: 2px solid @foreground;
+    border-radius: 7px;
+    background-color: @background;
+}
+
+#scroll {
+    margin-top: 5px;
+    border: none;
+    border-radius: 7px;
+    margin-bottom: 5px;
+}
+
+#img {
+    margin-right: 5px;
+}
+
+#text:selected {
+    color: @input;
+    margin: 2px;
+    border: none;
+    border-radius: 7px;
+}
+
+#entry {
+    margin: 2px;
+    border: none;
+    border-radius: 7px;
+    background-color: transparent;
+}
+
+#entry:selected {
+    margin: 2px;
+    border: 2px solid @foreground;
+    border-radius: 7px;
+}
